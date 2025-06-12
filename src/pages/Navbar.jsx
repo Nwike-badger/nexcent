@@ -2,6 +2,7 @@ import { useState } from "react";
 import Logo from "../assets/Icon.svg";
 import Responsive from '../assets/responsive.svg'
 import Right from '../assets/Right.svg'
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -15,34 +16,34 @@ const Navbar = () => {
       <img src={Logo} width={36} />
     </a>
     <h5 className="text-2xl font-semibold">
-      <a href="/Nexcent">Nexcent</a>
+      <Link to="/">Nexcent</Link>
     </h5>
   </div>
 
   <div className="flex items-center gap-5 text-sm text-[#4F5665]">
     <h5>
-      <a href="/Home">Home</a>
+      <Link to="/">Home</Link>
     </h5>
     <h5>
-      <a href="/features">Features</a>
+      <Link to="/">Features</Link>
     </h5>
     <h5>
-      <a href="/community">Community</a>
+      <Link to="/">Community</Link>
     </h5>
     <h5>
-      <a href="/Blog">Blog</a>
+      <Link to="/">Blog</Link>
     </h5>
     <h5>
-      <a href="/Pricing">Pricing</a>
+      <Link to="/">Pricing</Link>
     </h5>
 
     <h5 className="bg-[#4CAF4F] text-white px-4 py-2 rounded text-sm">
-      <a href="/RegisterNow">
+      <Link to ="/Register">
         <div className="flex items-center space-x-2">
           <span>Register Now</span>
           <img src={Right} width={26} />
         </div>
-      </a>
+      </Link>
     </h5>
   </div>
 </div>
@@ -50,13 +51,13 @@ const Navbar = () => {
 
       <div className="flex md:hidden justify-between  gap-3">
         <div className="flex items-center gap-2">
-            <a href="">
+            <Link to="/">
                 <img src={Logo} width={36} />
-            </a>
+            </Link>
           <h5 className="text-2xl font-semibold">
-           <a href="/">
+           <Link to="/">
                 Nexcent
-            </a>
+            </Link>
           </h5>
         </div>
 
@@ -75,32 +76,23 @@ const Navbar = () => {
 
        {mobile &&  <>
             <div className='block md:hidden text-lg text-[#4F5665] mt-5'>
-                <h5 className="mb-3 mx-8 hover:bg-[#4CAF4F] hover:text-white rounded">
-                    <a href="/home">
-                        Home
-                    </a>
-                </h5>
-                <h5 className="my-3 mx-8 hover:bg-[#4CAF4F] hover:text-white rounded">
-                    <a href="/features">
-                        Features
-                    </a>
-                </h5>
-                <h5 className="my-3 mx-8 hover:bg-[#4CAF4F] hover:text-white rounded">
-                    <a href="/community">
-                        Community
-                    </a>
-                </h5>
-                <h5 className="my-3 mx-8 hover:bg-[#4CAF4F] hover:text-white rounded">
-                    <a href="/blog">
-                        Pricing
-                    </a>
-                </h5>
-                <h5 className="bg-[#4CAF4F] text-white py-1 my-3 mx-8 hover:bg-white hover:text-[#4F5665] rounded">
-                    <a href="/help">
-                        Register Now
-                    </a>
-                </h5>
-            </div>
+  <h5 className="mb-3 mx-8 hover:bg-[#4CAF4F] hover:text-white rounded px-3 transition-colors duration-300">
+    <a href="/home">Home</a>
+  </h5>
+  <h5 className="my-3 mx-8 hover:bg-[#4CAF4F] hover:text-white rounded px-3 transition-colors duration-300">
+    <a href="/features">Features</a>
+  </h5>
+  <h5 className="my-3 mx-8 hover:bg-[#4CAF4F] hover:text-white rounded px-3 transition-colors duration-300">
+    <a href="/community">Community</a>
+  </h5>
+  <h5 className="my-3 mx-8 hover:bg-[#4CAF4F] hover:text-white rounded px-3 transition-colors duration-500">
+    <a href="/blog">Pricing</a>
+  </h5>
+  <h5 className="bg-[#4CAF4F] text-white py-1 my-3 mx-8 hover:bg-white hover:text-[#4CAF4F] rounded px-3 transition-colors duration-500">
+    <a href="/help">Register Now</a>
+  </h5>
+</div>
+
             
         </>}
     </nav>

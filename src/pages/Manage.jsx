@@ -4,12 +4,12 @@ import Clublogo from "../assets/clublogo.svg"
 
 const Manage = ()=>{
     return(
-        <div>
+        <div className="mt-3">
             <div className="text-center">
                 <h2 className="text-3xl font-bold text-gray-700">
                     Manage your entire community <br /> in a single system
                 </h2>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-gray-700 mt-1">
                     Who is Nextcent suitable for?
 
                 </p>

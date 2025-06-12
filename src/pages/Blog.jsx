@@ -29,6 +29,7 @@ const Blog = () => {
                   "Revamping the Membership Model with Triathlon Australia"
                 }
               />
+          
             </div>
           </div>
         ))}
@@ -36,5 +37,47 @@ const Blog = () => {
     </div>
   );
 };
+
+
+
+
+
+// const Blog = () => {
+//   const images = [Image1, Image2, Image3];
+//   const titles = [
+//     "Creating Streamlined Safeguarding Processes with OneRen",
+//     "What are your safeguarding responsibilities and how can you manage them?",
+//     "Revamping the Membership Model with Triathlon Australia"
+//   ];
+
+
+//   const blogItems = [];
+
+//   for (let i = 0; i < images.length; i++) {
+//     blogItems.push(
+//       <div key={i} className="flex flex-col items-center gap-4">
+//         <img src={images[i]} alt="" className="w-full max-w-xs h-auto object-cover rounded-md" />
+//         <div className="w-full max-w-[250px] -mt-14 mx-auto z-10">
+//           <BlogCard title={titles[i]} Right={Right} />
+//         </div>
+//       </div>
+//     );
+//   }
+
+//   return (
+//     <div className="clients">
+//       <div className="text-center mb-10 max-w-md mx-auto">
+//         <h2 className="text-3xl font-bold text-gray-700 mb-3">Caring is the new marketing</h2>
+//         <p className="text-gray-700 text-sm">
+//           The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lots more.
+//         </p>
+//       </div>
+
+//       <div className="flex flex-col lg:flex-row flex-wrap items-center justify-center gap-10">
+//         {blogItems}
+//       </div>
+//     </div>
+//   );
+// };
 
 export default Blog;
